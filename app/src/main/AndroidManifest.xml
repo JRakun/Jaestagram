@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ja21.jaestagram">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.ja21.jaestagram.StartActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.ja21.jaestagram.LoginActivity" />
+        <activity android:name="com.ja21.jaestagram.RegisterActivity" />
+        <activity android:name="com.ja21.jaestagram.MainActivity" />
+        <activity android:name="com.ja21.jaestagram.PostActivity" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+        <activity android:name="com.ja21.jaestagram.CommentsActivity" />
+        <activity android:name="com.ja21.jaestagram.OptionsActivity" />
+        <activity android:name="com.ja21.jaestagram.EditProfileActivity" />
+        <activity android:name="com.ja21.jaestagram.FollowersActivity" />
+        <activity android:name="com.ja21.jaestagram.StoryActivity" />
+        <activity android:name="com.ja21.jaestagram.AddStoryActivity"></activity>
+    </application>
+
+</manifest>
